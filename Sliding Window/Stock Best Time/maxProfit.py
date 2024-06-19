@@ -9,7 +9,6 @@ class Solution(object):
         for r in range(l+1, len(prices)):
             if prices[r] < prices[l]:
                 l = r
-                r = r+1
             else:
                 maximum = max(maximum, prices[r] - prices[l])
         return maximum
